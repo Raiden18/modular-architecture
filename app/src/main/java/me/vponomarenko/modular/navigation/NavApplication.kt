@@ -1,8 +1,12 @@
 package me.vponomarenko.modular.navigation
 
 import android.app.Application
-import me.vponomarenko.injectionmanager.IHasComponent
-import me.vponomarenko.injectionmanager.x.XInjectionManager
+import me.vponomarenko.modular.navigation.data.di.remoteDataSourcesModule
+import me.vponomarenko.modular.navigation.data.di.repositoriesModule
+import me.vponomarenko.modular.navigation.di.navigationModule
+import me.vponomarenko.modular.navigation.question.questionModule
+import org.koin.android.ext.koin.androidContext
+import org.koin.core.context.startKoin
 
 /**
  * Author: Valery Ponomarenko
@@ -13,8 +17,21 @@ import me.vponomarenko.injectionmanager.x.XInjectionManager
 class NavApplication : Application() {
     override fun onCreate() {
         super.onCreate()
-        XInjectionManager.bindComponentToCustomLifecycle(object : IHasComponent<Navigator> {
-            override fun getComponent(): Navigator = Navigator()
-        })
+        initKoin()
     }
+
+    private fun initKoin() {
+        startKoin {
+            modules(
+                listOf(
+                    navigationModule,
+                    questionModule,
+                    remoteDataSourcesModule,
+                    repositoriesModule
+                )
+            )
+            androidContext(this@NavApplication)
+        }
+    }
+
 }
