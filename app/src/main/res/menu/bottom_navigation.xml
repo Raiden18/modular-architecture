@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home"
+            android:contentDescription="HOME"
+            android:title="HOME"/>
+    <item
+            android:id="@+id/questions"
+            android:icon="@drawable/ic_list"
+            android:contentDescription="QUESTIONS"
+            android:title="QUESTIONS"/>
+</menu>

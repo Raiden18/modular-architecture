@@ -10,12 +10,6 @@ import me.vponomarenko.injectionmanager.x.XInjectionManager
 import me.vponomarenko.modular.navigation.result.R
 import org.koin.android.ext.android.inject
 
-/**
- * Author: Valery Ponomarenko
- * Date: 30/01/2019
- * LinkedIn: https://www.linkedin.com/in/ponomarenkovalery
- */
-
 class WrongAnswerFragment : Fragment() {
 
     private val navigation: WrongAnswerNavigation by inject()

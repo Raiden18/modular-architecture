@@ -1,6 +1,7 @@
 package me.vponomarenko.modular.navigation.questions
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,12 +9,6 @@ import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_questions.*
 import me.vponomarenko.injectionmanager.x.XInjectionManager
 import org.koin.android.ext.android.inject
-
-/**
- * Author: Valery Ponomarenko
- * Date: 30/01/2019
- * LinkedIn: https://www.linkedin.com/in/ponomarenkovalery
- */
 
 class QuestionsFragment : Fragment() {
 

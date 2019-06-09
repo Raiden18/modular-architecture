@@ -24,9 +24,6 @@
                 android:id="@+id/action_questionFragment_to_rightAnswerFragment"
                 app:destination="@id/rightAnswerFragment"
                 app:popUpTo="@+id/questionsFragment"/>
-
-        <argument android:name="numberAnswer"
-                  app:argType="integer"/>
     </fragment>
     <fragment
             android:id="@+id/wrongAnswerFragment"

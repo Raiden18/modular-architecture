@@ -1,6 +1,7 @@
 package me.vponomarenko.modular.navigation.question
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,12 +9,6 @@ import androidx.fragment.app.Fragment
 import me.vponomarenko.modular.navigation.question.databinding.FragmentQuestionBinding
 import org.koin.android.scope.currentScope
 import org.koin.android.viewmodel.ext.android.viewModel
-
-/**
- * Author: Valery Ponomarenko
- * Date: 30/01/2019
- * LinkedIn: https://www.linkedin.com/in/ponomarenkovalery
- */
 
 class QuestionFragment : Fragment() {
     companion object {
@@ -25,8 +20,8 @@ class QuestionFragment : Fragment() {
     }
 
     private val questionViewModel: QuestionViewModel by currentScope.viewModel(this)
-    private val questionId: Long by lazy {
-        arguments?.getLong(EXTRA_QUESTION_ID) ?: throw IllegalStateException("no questionId")
+    private val questionId: Int by lazy {
+        arguments?.getInt(EXTRA_QUESTION_ID) ?: throw IllegalStateException("no questionId")
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -35,9 +30,5 @@ class QuestionFragment : Fragment() {
         binding.lifecycleOwner = this
         binding.textQuestion.text = getString(R.string.question, questionId)
         return binding.root
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
     }
 }
