@@ -1,12 +1,12 @@
-package me.vponamorenko.modular.navigation.routers
+package me.vponamorenko.modular.navigation.navigators
 
-import me.vponamorenko.modular.navigation.controller.NavigationController
+import me.vponamorenko.modular.navigation.controller.Router
 import me.vponamorenko.modular.navigation.arguments.questionfragment.QuestionFragmentArguments
 import me.vponamorenko.modular.navigation.question.R
 import me.vponomarenko.modular.navigation.questions.QuestionsNavigation
 
 internal class QuestionsNavigationImpl(
-    private val navigationController: NavigationController,
+    private val navigationController: Router,
     private val bundlesScreens: QuestionFragmentArguments
 ) : QuestionsNavigation {
 

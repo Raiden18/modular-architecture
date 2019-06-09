@@ -5,14 +5,9 @@ import me.vponamorenko.modular.navigation.di.navigationModule
 import me.vponomarenko.modular.navigation.data.di.remoteDataSourcesModule
 import me.vponomarenko.modular.navigation.data.di.repositoriesModule
 import me.vponomarenko.modular.navigation.question.questionModule
+import me.vponomarenko.modular.navigation.questions.questionsModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
-
-/**
- * Author: Valery Ponomarenko
- * Date: 30/01/2019
- * LinkedIn: https://www.linkedin.com/in/ponomarenkovalery
- */
 
 class NavApplication : Application() {
     override fun onCreate() {
@@ -27,11 +22,11 @@ class NavApplication : Application() {
                     navigationModule,
                     questionModule,
                     remoteDataSourcesModule,
-                    repositoriesModule
+                    repositoriesModule,
+                    questionsModule
                 )
             )
             androidContext(this@NavApplication)
         }
     }
-
 }

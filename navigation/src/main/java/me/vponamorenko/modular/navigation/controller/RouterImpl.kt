@@ -6,7 +6,7 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation.findNavController
 import me.vponamorenko.modular.navigation.question.R
 
-internal class NavigationControllerImpl : NavigationController {
+internal class RouterImpl : Router {
     private var navController: NavController? = null
 
     override fun navigate(resId: Int, bundle: Bundle) {

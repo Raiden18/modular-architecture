@@ -25,6 +25,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':ui__base')
     implementation project(':ui_questions')
     implementation project(':ui_question')
     implementation project(':ui_result')
