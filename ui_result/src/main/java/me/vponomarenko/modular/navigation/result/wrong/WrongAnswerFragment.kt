@@ -1,26 +1,16 @@
 package me.vponomarenko.modular.navigation.result.wrong
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.fragment_wrong.*
-import me.vponomarenko.injectionmanager.x.XInjectionManager
+import me.vponomarenko.modular.navigation.base.BaseFragment
 import me.vponomarenko.modular.navigation.result.R
-import org.koin.android.ext.android.inject
+import me.vponomarenko.modular.navigation.result.databinding.FragmentWrongBinding
+import org.koin.android.scope.currentScope
+import org.koin.android.viewmodel.ext.android.viewModel
 
-class WrongAnswerFragment : Fragment() {
+class WrongAnswerFragment : BaseFragment<WrongAnswerViewModel, FragmentWrongBinding>() {
+    override val viewModel: WrongAnswerViewModel by currentScope.viewModel(this)
+    override val layoutId: Int = R.layout.fragment_wrong
 
-    private val navigation: WrongAnswerNavigation by inject()
-
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? =
-        inflater.inflate(R.layout.fragment_wrong, container, false)
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        button_try_again.setOnClickListener {
-            navigation.tryAgain()
-        }
+    override fun onCreateView() {
+        binding.viewModel = viewModel
     }
 }

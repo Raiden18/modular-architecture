@@ -6,6 +6,8 @@ import me.vponomarenko.modular.navigation.data.di.remoteDataSourcesModule
 import me.vponomarenko.modular.navigation.data.di.repositoriesModule
 import me.vponomarenko.modular.navigation.question.questionModule
 import me.vponomarenko.modular.navigation.questions.questionsModule
+import me.vponomarenko.modular.navigation.result.right.rightAnswerViewModel
+import me.vponomarenko.modular.navigation.result.wrong.wrongAnswerViewModel
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
@@ -23,7 +25,9 @@ class NavApplication : Application() {
                     questionModule,
                     remoteDataSourcesModule,
                     repositoriesModule,
-                    questionsModule
+                    questionsModule,
+                    rightAnswerViewModel,
+                    wrongAnswerViewModel
                 )
             )
             androidContext(this@NavApplication)
