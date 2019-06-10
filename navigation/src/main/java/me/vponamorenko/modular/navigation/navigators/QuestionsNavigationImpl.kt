@@ -1,6 +1,6 @@
 package me.vponamorenko.modular.navigation.navigators
 
-import me.vponamorenko.modular.navigation.controller.Router
+import me.vponamorenko.modular.navigation.router.Router
 import me.vponamorenko.modular.navigation.arguments.questionfragment.QuestionFragmentArguments
 import me.vponamorenko.modular.navigation.question.R
 import me.vponomarenko.modular.navigation.questions.QuestionsNavigation

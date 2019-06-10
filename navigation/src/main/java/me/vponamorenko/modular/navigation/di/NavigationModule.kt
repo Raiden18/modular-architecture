@@ -2,8 +2,8 @@ package me.vponamorenko.modular.navigation.di
 
 import me.vponamorenko.modular.navigation.arguments.questionfragment.QuestionFragmentArguments
 import me.vponamorenko.modular.navigation.arguments.questionfragment.QuestionFragmentArgumentsImpl
-import me.vponamorenko.modular.navigation.controller.Router
-import me.vponamorenko.modular.navigation.controller.RouterImpl
+import me.vponamorenko.modular.navigation.router.Router
+import me.vponamorenko.modular.navigation.router.RouterImpl
 import me.vponamorenko.modular.navigation.navigators.QuestionNavigationImpl
 import me.vponamorenko.modular.navigation.navigators.QuestionsNavigationImpl
 import me.vponamorenko.modular.navigation.navigators.RightAnswerNavigationImpl

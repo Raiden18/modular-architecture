@@ -1,4 +1,4 @@
-package me.vponamorenko.modular.navigation.controller
+package me.vponamorenko.modular.navigation.router
 
 import android.app.Activity
 import android.os.Bundle

@@ -1,1 +1,8 @@
-include ':app', ':ui_questions', ':ui_question', ':ui_result', ':data', ':domain', ':navigation', ':ui__base'
+include ':app',
+        ':data',
+        ':domain',
+        ':navigation',
+        ':ui__base',
+        ':ui_questions',
+        ':ui_question',
+        ':ui_result'

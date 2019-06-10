@@ -2,7 +2,7 @@ package me.vponomarenko.modular.navigation
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import me.vponamorenko.modular.navigation.controller.Router
+import me.vponamorenko.modular.navigation.router.Router
 import org.koin.android.ext.android.inject
 
 class MainActivity : AppCompatActivity() {

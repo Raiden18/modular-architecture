@@ -1,22 +1,9 @@
 apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
+apply from: "$rootDir/base_android_settings.gradle"
 
 android {
-    compileSdkVersion 28
     defaultConfig {
         applicationId "me.vponomarenko.modular.navigation"
-        minSdkVersion 19
-        targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-    }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
     }
     dataBinding{
         enabled = true
@@ -24,25 +11,15 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':ui__base')
     implementation project(':ui_questions')
     implementation project(':ui_question')
     implementation project(':ui_result')
     implementation project(':navigation')
-    implementation project(':domain')
     implementation project(':data')
-    
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'androidx.appcompat:appcompat:1.1.0-alpha01'
-    implementation 'com.github.valeryponomarenko.componentsmanager:androidx:2.0.1'
-    implementation 'com.android.support:design:28.0.0'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
-    implementation 'org.koin:koin-android:2.0.1'
-    // or Koin for Lifecycle scoping
-    implementation 'org.koin:koin-android-scope:2.0.1'
-    // or Koin for Android Architecture ViewModel
-    implementation 'org.koin:koin-android-viewmodel:2.0.1'
+
+    implementation deps.support.app_compat
+    implementation deps.koin.android
+    implementation deps.koin.android_scope
+    implementation deps.koin.viewmodel
 }
