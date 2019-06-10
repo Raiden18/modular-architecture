@@ -1,5 +1,6 @@
 apply from: "$rootDir/base_fragment_dependencies.gradle"
 
 dependencies {
+    implementation project(':imagebinder')
     implementation deps.view.constraintlayout
 }

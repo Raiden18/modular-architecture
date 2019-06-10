@@ -18,7 +18,6 @@ class QuestionFragment : BaseFragment<QuestionViewModel, FragmentQuestionBinding
             putInt(EXTRA_QUESTION_ID, questionId)
         }
     }
-
     override val viewModel: QuestionViewModel by currentScope.viewModel(this)
     override val layoutId: Int = R.layout.fragment_question
     private val questionId: Int by lazy {
