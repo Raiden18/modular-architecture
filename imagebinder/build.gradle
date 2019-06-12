@@ -4,5 +4,4 @@ apply from: "$rootDir/base_android_settings.gradle"
 
 dependencies {
     implementation deps.glide.glide
-    kapt deps.glide.annotation_porocessor
 }
