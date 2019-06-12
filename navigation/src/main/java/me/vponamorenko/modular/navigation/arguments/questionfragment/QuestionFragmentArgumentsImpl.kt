@@ -1,7 +1,7 @@
 package me.vponamorenko.modular.navigation.arguments.questionfragment
 
 import android.os.Bundle
-import me.vponomarenko.modular.navigation.question.QuestionFragment
+import me.raiden.modular.navigation.question.QuestionFragment
 
 internal class QuestionFragmentArgumentsImpl :
     QuestionFragmentArguments {

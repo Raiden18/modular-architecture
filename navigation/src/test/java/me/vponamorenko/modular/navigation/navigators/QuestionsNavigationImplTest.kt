@@ -1,16 +1,11 @@
 package me.vponamorenko.modular.navigation.navigators
 
-import android.os.Bundle
-import io.mockk.every
-import io.mockk.internalSubstitute
 import io.mockk.spyk
 import io.mockk.verify
-import junit.framework.Assert.assertEquals
 import me.vponamorenko.modular.navigation.arguments.questionfragment.QuestionFragmentArguments
 import me.vponamorenko.modular.navigation.question.R
 import me.vponamorenko.modular.navigation.router.Router
-import me.vponomarenko.modular.navigation.question.QuestionFragment.Companion.EXTRA_QUESTION_ID
-import me.vponomarenko.modular.navigation.questions.QuestionsNavigation
+import me.raiden.modular.navigation.questions.QuestionsNavigation
 import org.junit.Before
 import org.junit.Test
 

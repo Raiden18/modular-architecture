@@ -1,11 +1,9 @@
 package me.vponamorenko.modular.navigation.navigators
 
-import io.mockk.impl.annotations.MockK
 import io.mockk.spyk
 import io.mockk.verify
 import me.vponamorenko.modular.navigation.router.Router
-import me.vponomarenko.modular.navigation.result.right.RightAnswerNavigation
-import org.junit.Assert.*
+import me.raiden.modular.navigation.result.right.RightAnswerNavigation
 import org.junit.Before
 import org.junit.Test
 

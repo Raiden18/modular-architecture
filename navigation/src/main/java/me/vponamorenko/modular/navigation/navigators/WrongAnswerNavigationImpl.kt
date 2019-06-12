@@ -1,7 +1,7 @@
 package me.vponamorenko.modular.navigation.navigators
 
 import me.vponamorenko.modular.navigation.router.Router
-import me.vponomarenko.modular.navigation.result.wrong.WrongAnswerNavigation
+import me.raiden.modular.navigation.result.wrong.WrongAnswerNavigation
 
 internal class WrongAnswerNavigationImpl(private val navigationController: Router) : WrongAnswerNavigation {
 

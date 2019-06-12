@@ -6,7 +6,7 @@
 
     <fragment
             android:id="@+id/questionsFragment"
-            android:name="me.vponomarenko.modular.navigation.questions.QuestionsFragment"
+            android:name="me.raiden.modular.navigation.questions.QuestionsFragment"
             android:label="QuestionsFragment">
         <action
                 android:id="@+id/action_questionsFragment_to_questionFragment"
@@ -15,7 +15,7 @@
 
     <fragment
             android:id="@+id/questionFragment"
-            android:name="me.vponomarenko.modular.navigation.question.QuestionFragment"
+            android:name="me.raiden.modular.navigation.question.QuestionFragment"
             android:label="QuestionFragment">
         <action
                 android:id="@+id/action_questionFragment_to_wrongAnswerFragment"
@@ -27,10 +27,10 @@
     </fragment>
     <fragment
             android:id="@+id/wrongAnswerFragment"
-            android:name="me.vponomarenko.modular.navigation.result.wrong.WrongAnswerFragment"
+            android:name="me.raiden.modular.navigation.result.wrong.WrongAnswerFragment"
             android:label="WrongAnswerFragment"/>
     <fragment
             android:id="@+id/rightAnswerFragment"
-            android:name="me.vponomarenko.modular.navigation.result.right.RightAnswerFragment"
+            android:name="me.raiden.modular.navigation.result.right.RightAnswerFragment"
             android:label="RightAnswerFragment"/>
 </navigation>

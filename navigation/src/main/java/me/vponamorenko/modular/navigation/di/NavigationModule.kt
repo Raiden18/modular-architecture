@@ -8,10 +8,10 @@ import me.vponamorenko.modular.navigation.navigators.QuestionNavigationImpl
 import me.vponamorenko.modular.navigation.navigators.QuestionsNavigationImpl
 import me.vponamorenko.modular.navigation.navigators.RightAnswerNavigationImpl
 import me.vponamorenko.modular.navigation.navigators.WrongAnswerNavigationImpl
-import me.vponomarenko.modular.navigation.question.QuestionNavigation
-import me.vponomarenko.modular.navigation.questions.QuestionsNavigation
-import me.vponomarenko.modular.navigation.result.right.RightAnswerNavigation
-import me.vponomarenko.modular.navigation.result.wrong.WrongAnswerNavigation
+import me.raiden.modular.navigation.question.QuestionNavigation
+import me.raiden.modular.navigation.questions.QuestionsNavigation
+import me.raiden.modular.navigation.result.right.RightAnswerNavigation
+import me.raiden.modular.navigation.result.wrong.WrongAnswerNavigation
 import org.koin.dsl.module
 
 val navigationModule = module(createdAtStart = true) {

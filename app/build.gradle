@@ -3,7 +3,7 @@ apply from: "$rootDir/base_android_settings.gradle"
 
 android {
     defaultConfig {
-        applicationId "me.vponomarenko.modular.navigation"
+        applicationId "me.raiden.modular.navigation"
     }
     dataBinding{
         enabled = true

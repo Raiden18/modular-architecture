@@ -4,7 +4,7 @@ import io.mockk.spyk
 import io.mockk.verify
 import me.vponamorenko.modular.navigation.question.R
 import me.vponamorenko.modular.navigation.router.Router
-import me.vponomarenko.modular.navigation.question.QuestionNavigation
+import me.raiden.modular.navigation.question.QuestionNavigation
 import org.junit.Before
 import org.junit.Test
 
