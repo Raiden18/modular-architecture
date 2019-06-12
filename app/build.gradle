@@ -19,7 +19,4 @@ dependencies {
     implementation project(':data')
 
     implementation deps.support.app_compat
-    implementation deps.koin.android
-    implementation deps.koin.android_scope
-    implementation deps.koin.viewmodel
 }

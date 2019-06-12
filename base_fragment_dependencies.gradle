@@ -9,16 +9,11 @@ android {
 
 dependencies {
     implementation project(':ui__base')
-    implementation deps.kotlin.stdlib
     //Koin
     implementation deps.koin.viewmodel
-    implementation deps.koin.android
     implementation deps.koin.android_scope
     //Arch
     implementation deps.arch.view_model
     //Support
     implementation deps.support.app_compat
-    //Tests
-    testImplementation deps.unit_test.junit
-    testImplementation deps.unit_test.mockk
 }

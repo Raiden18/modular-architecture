@@ -1,11 +1,2 @@
 apply plugin: 'com.android.library'
 apply from : "$rootDir/base_android_settings.gradle"
-
-dependencies {
-    testImplementation deps.unit_test.junit
-    implementation deps.kotlin.stdlib
-    implementation deps.koin.android
-}
-repositories {
-    mavenCentral()
-}

@@ -18,4 +18,10 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation deps.kotlin.stdlib
     implementation project(':domain')
+    //Tests
+    testImplementation deps.unit_test.junit
+    testImplementation deps.unit_test.mockk
+
+    //Koin
+    implementation deps.koin.android
 }

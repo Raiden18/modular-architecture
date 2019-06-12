@@ -6,11 +6,5 @@ android {
     }
 }
 dependencies {
-    implementation deps.kotlin.stdlib
-    implementation deps.koin.android
-    implementation deps.arch.view_model
     implementation deps.support.app_compat
-}
-repositories {
-    mavenCentral()
 }
