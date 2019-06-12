@@ -14,7 +14,7 @@ import me.vponomarenko.modular.navigation.result.right.RightAnswerNavigation
 import me.vponomarenko.modular.navigation.result.wrong.WrongAnswerNavigation
 import org.koin.dsl.module
 
-val navigationModule = module {
+val navigationModule = module(createdAtStart = true) {
     //Navigators
     single<QuestionsNavigation> { QuestionsNavigationImpl(get(), get()) }
     single<QuestionNavigation> { QuestionNavigationImpl(get()) }

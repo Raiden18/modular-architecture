@@ -13,7 +13,7 @@ import org.koin.android.viewmodel.ext.android.viewModel
 
 class QuestionFragment : BaseFragment<QuestionViewModel, FragmentQuestionBinding>() {
     companion object {
-        private const val EXTRA_QUESTION_ID = "me.vponomarenko.modular.navigation.question.id"
+        const val EXTRA_QUESTION_ID = "me.vponomarenko.modular.navigation.question.id"
         fun createBundle(questionId: Int) = Bundle().apply {
             putInt(EXTRA_QUESTION_ID, questionId)
         }

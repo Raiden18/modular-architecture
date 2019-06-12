@@ -7,11 +7,11 @@ import me.vponomarenko.modular.navigation.questions.QuestionsNavigation
 
 internal class QuestionsNavigationImpl(
     private val navigationController: Router,
-    private val bundlesScreens: QuestionFragmentArguments
+    private val arguments: QuestionFragmentArguments
 ) : QuestionsNavigation {
 
     override fun openQuestion(questionId: Int) {
-        val questionData = bundlesScreens.setQuestionId(questionId)
+        val questionData = arguments.setQuestionId(questionId)
         navigationController.navigate(R.id.action_questionsFragment_to_questionFragment, questionData)
     }
 }
