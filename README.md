@@ -1,11 +1,5 @@
-# Navigation in Multi-Module Projects
-[![Android Weekly]( https://img.shields.io/badge/Android%20Weekly-%23348-blue.svg )]( http://androidweekly.net/issues/issue-348)
+# Modular-architecture
+Project was based on [Navigation in Multi-Module Projects - ProAndroidDev](https://medium.com/p/navigation-in-multi-module-projects-9a5c53ad219) but then I decided to implement DI via Koin, and isolate third party framework(Glide) and navigation from the application. And to manage dependencies like a samples from Google. 
 
-This is an example of how to implement navigation in a multi-module project.
 
-![Application](https://cdn-images-1.medium.com/max/1600/1*sQPQIhakVlhq--AvqnUeNg.gif)
-
-# Links
-[Navigation in Multi-Modules Projects](https://vponomarenko.me/article/2019/04/30/navigation-in-multi-modules-projects.html)
-
-[Navigation in Multi-Module Projects - ProAndroidDev](https://medium.com/p/navigation-in-multi-module-projects-9a5c53ad219)
+A purpose of of project is testing navigation  component in multimodule architectire before starting new project at [Live Typing](https://livetyping.com/en/)  
