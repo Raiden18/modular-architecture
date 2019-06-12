@@ -12,6 +12,7 @@ versions.constraint_layout = "1.1.3"
 versions.android_gradle_plugin = "3.4.1"
 versions.kotlin = "1.3.31"
 versions.glide = "4.9.0"
+versions.mockk = "1.9"
 ext.versions = versions
 
 def koin = [:]
@@ -22,6 +23,7 @@ deps.koin = koin
 
 def unit_test = [:]
 unit_test.junit = "junit:junit:$versions.junit_4"
+unit_test.mockk = "io.mockk:mockk:$versions.mockk"
 deps.unit_test = unit_test
 
 def arch = [:]

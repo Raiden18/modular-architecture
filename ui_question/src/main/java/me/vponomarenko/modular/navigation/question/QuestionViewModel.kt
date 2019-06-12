@@ -8,12 +8,12 @@ class QuestionViewModel(
     private val logIngUseCase: LogInGateway
 ) : ViewModel() {
 
-    fun openRightAnswer() {
+    fun onRightAnswerClick() {
         logIngUseCase.logIn("asd", "asd123123")
         questionNavigation.openRightAnswer()
     }
 
-    fun openWrongAnswer() {
+    fun onWrongAnswerClick() {
         questionNavigation.openWrongAnswer()
     }
 }
